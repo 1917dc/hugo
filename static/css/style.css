@@ -23,7 +23,8 @@ hr {
 }
 
 .logo { display: flex; justify-content: center; }
-
+.header_title { margin-right: 1rem; }
+.navbar_container { display: flex; }
 /* code */
 pre {
   border: 1px solid #ddd;

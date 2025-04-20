@@ -4,17 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
     {{ partial "head_custom.html" . }}
   </head>
 
   <body>
+    <div class="navbar_container">
+    <h3 class="menu title header_title">[{{ .Site.Title }}]</h3>
     <nav>
     <ul class="menu">
+      <span>[</span>
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end }}
+      <span>]</span>
     </ul>
+    </div>
     <hr/>
     </nav>

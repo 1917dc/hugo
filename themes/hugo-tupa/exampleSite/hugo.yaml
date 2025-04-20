@@ -1,0 +1,48 @@
+baseurl: https://example.org/
+theme: ../../../hugo-tupa
+languageCode: "pt-br" 
+title: My New Hugo Site
+
+permalinks:
+  note: "/anotacao/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name : Inicio
+      url: "/"
+      weight: 1
+    - name : Sobre
+      url: "sobre/"
+      weight: 2
+    - name : Categorias
+      url: "categorias/"
+      weight: 3
+    - name : Tags
+      url: "tags/"
+      weight: 4
+    - name : RSS
+      url: "index.xml"
+
+params:
+  description: "Inserir descrição aqui"
+  footer: "&copy; John Doe | [Github](http://github.com/johndoe)"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)

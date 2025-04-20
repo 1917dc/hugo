@@ -1,0 +1,13 @@
+name = "Hugo Tupã"
+license = "MIT"
+licenselink = ""
+description = "Tema base mínimo para construção de blogs."
+homepage = ""
+tags = ["blog", "personal"]
+features = ["minimalist"]
+min_version = "0.59.1"
+
+# If the theme has a single author
+[author]
+    name = "Luiz G."
+    homepage = "https://1917.github.io/blog"

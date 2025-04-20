@@ -1,7 +1,7 @@
 baseurl: https://example.org/
-theme: ../../../hugo-tupa
+theme: ../../../hugo-itamaraty
 languageCode: "pt-br" 
-title: My New Hugo Site
+title: Hugo Itamaraty
 
 permalinks:
   note: "/anotacao/:year/:month/:day/:slug/"
@@ -26,7 +26,7 @@ menu:
 
 params:
   description: "Inserir descrição aqui"
-  footer: "&copy; John Doe | [Github](http://github.com/johndoe)"
+  footer: "&copy; Luiz G. | [Github](http://github.com/1917dc)"
 
 markup:
   highlight:

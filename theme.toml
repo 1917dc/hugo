@@ -5,7 +5,7 @@ description = "Tema base mínimo para construção de blogs."
 homepage = ""
 tags = ["blog", "personal"]
 features = ["minimalist"]
-min_version = "0.59.1"
+min_version = "0.91.0"
 
 # If the theme has a single author
 [author]

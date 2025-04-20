@@ -1,19 +1,17 @@
 {{ partial "header.html" . }}
 
-{{ if not .IsHome }}
-  <h1>{{ .Title | markdownify }}</h1>
+{{if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
 {{ end }}
-
-{{/* conteúdo da página após inserir o título */}}
 
 {{ .Content }}
 
 <ul>
   {{ $pages := .Pages }}
-  {{ if .IsHome }} {{ $pages = .Site.RegularPages }} {{ end }}
-  {{ range (where $pages "Section" "!=" "")}}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages "Section" "!=" "") }}
   <li>
-    <span class="date">{{ .Date.Format "02/01/2006" }}</span>
+    <span class="date">{{ .Date.Format "01/02/2006" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}

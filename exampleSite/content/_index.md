@@ -2,7 +2,13 @@
 title: 'Inicio'
 ---
 
+<div style="display: flex; align-items: center; gap: 16px;">
+
 # Hugo Rubik
+  <img src="/rubik.png" alt="Rubik" style="width: 80px; height: auto;" />
+</div>
+
+
 
 O tema "Rubik" tem o intuito de ser um tema minimalista para o framework de blogs "Hugo".
 Boa parte do design foi inspirada do tema "[Hugo Xmin](https://github.com/yihui/hugo-xmin/tree/master)". Alterações pertinentes para localização foram feitas dentro do tema.

@@ -1,7 +1,7 @@
 baseurl: https://example.org/
-theme: ../../../hugo-itamaraty
+theme: ../../../hugo-rubik
 languageCode: "pt-br" 
-title: Hugo Itamaraty
+title: Hugo Rubik 
 
 permalinks:
   note: "/anotacao/:year/:month/:day/:slug/"
